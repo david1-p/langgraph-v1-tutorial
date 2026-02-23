@@ -1,22 +1,24 @@
 from langchain_core.output_parsers import StrOutputParser
 from langchain_community.vectorstores import FAISS
-from langchain_openai import OpenAIEmbeddings, ChatOpenAI
-from langchain.embeddings.cache import CacheBackedEmbeddings
-from langchain.storage import LocalFileStore
+from langchain_openai import OpenAIEmbeddings
+from langchain.chat_models import init_chat_model
+from langchain_classic.embeddings.cache import CacheBackedEmbeddings
+from langchain_classic.storage import LocalFileStore
 
 from abc import ABC, abstractmethod
 from operator import itemgetter
 from pathlib import Path
 import os
 import hashlib
-from langchain import hub
+from langchain_classic import hub
 
 
 class RetrievalChain(ABC):
     def __init__(self):
         self.source_uri = None
         self.k = 8
-        self.model_name = "gpt-4.1-mini"
+        # OpenAI 키 사용 시 gpt-5.2, gpt-4.1-mini 등으로 변경 가능
+        self.model_name = "claude-sonnet-4-5"
         self.temperature = 0
         self.prompt = "teddynote/rag-prompt"
         self.embeddings = "text-embedding-3-small"
@@ -128,7 +130,7 @@ class RetrievalChain(ABC):
         return dense_retriever
 
     def create_model(self):
-        return ChatOpenAI(model_name=self.model_name, temperature=self.temperature)
+        return init_chat_model(self.model_name, temperature=self.temperature)
 
     def create_prompt(self):
         return hub.pull(self.prompt)
