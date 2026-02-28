@@ -27,4 +27,7 @@ dependencies = [
     "scikit-learn>=1.7.2",
     "seaborn>=0.13.2",
     "langgraph-supervisor>=0.0.31",
+    "langchain-community>=0.4.1",
+    "arxiv>=2.4.0",
+    "pymupdf>=1.27.1",
 ]
