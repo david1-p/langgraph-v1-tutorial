@@ -28,6 +28,6 @@ dependencies = [
     "seaborn>=0.13.2",
     "pdfplumber>=0.11.9",
     "faiss-cpu>=1.13.2",
-    "langchain-community>=0.4.1",
-    "langchain-experimental>=0.4.1",
+    "arxiv>=2.4.0",
+    "pymupdf>=1.27.1",
 ]
