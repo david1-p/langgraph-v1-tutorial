@@ -18,7 +18,13 @@
           "type": "text",
           "id": "START-text"
         }
-      ]
+      ],
+      "backgroundColor": "#f3f4f6",
+      "strokeColor": "#6b7280",
+      "fillStyle": "solid",
+      "roundness": {
+        "type": 3
+      }
     },
     {
       "id": "START-text",
@@ -48,7 +54,7 @@
       "link": null,
       "locked": false,
       "text": "__start__",
-      "fontSize": 13,
+      "fontSize": 16,
       "fontFamily": 1,
       "textAlign": "center",
       "verticalAlign": "middle",
@@ -72,7 +78,13 @@
           "type": "text",
           "id": "chatbot-text"
         }
-      ]
+      ],
+      "backgroundColor": "#dbeafe",
+      "strokeColor": "#2563eb",
+      "fillStyle": "solid",
+      "roundness": {
+        "type": 3
+      }
     },
     {
       "id": "chatbot-text",
@@ -102,7 +114,7 @@
       "link": null,
       "locked": false,
       "text": "chatbot",
-      "fontSize": 13,
+      "fontSize": 16,
       "fontFamily": 1,
       "textAlign": "center",
       "verticalAlign": "middle",
@@ -113,12 +125,12 @@
     },
     {
       "id": "tools_condition",
-      "type": "diamond",
+      "type": "rectangle",
       "groupIds": [],
-      "x": 91.62890625,
-      "y": 226.671875,
-      "width": 197.578125,
-      "height": 197.578125,
+      "x": 110.41796875,
+      "y": 295.4609375,
+      "width": 160,
+      "height": 60,
       "strokeWidth": 2,
       "link": null,
       "boundElements": [
@@ -126,7 +138,13 @@
           "type": "text",
           "id": "tools_condition-text"
         }
-      ]
+      ],
+      "backgroundColor": "#fed7aa",
+      "strokeColor": "#ea580c",
+      "fillStyle": "solid",
+      "roundness": {
+        "type": 3
+      }
     },
     {
       "id": "tools_condition-text",
@@ -156,7 +174,7 @@
       "link": null,
       "locked": false,
       "text": "tools_condition",
-      "fontSize": 13,
+      "fontSize": 16,
       "fontFamily": 1,
       "textAlign": "center",
       "verticalAlign": "middle",
@@ -180,7 +198,13 @@
           "type": "text",
           "id": "tools-text"
         }
-      ]
+      ],
+      "backgroundColor": "#ccfbf1",
+      "strokeColor": "#0d9488",
+      "fillStyle": "solid",
+      "roundness": {
+        "type": 3
+      }
     },
     {
       "id": "tools-text",
@@ -210,7 +234,7 @@
       "link": null,
       "locked": false,
       "text": "tools",
-      "fontSize": 13,
+      "fontSize": 16,
       "fontFamily": 1,
       "textAlign": "center",
       "verticalAlign": "middle",
@@ -234,7 +258,13 @@
           "type": "text",
           "id": "END-text"
         }
-      ]
+      ],
+      "backgroundColor": "#f3f4f6",
+      "strokeColor": "#6b7280",
+      "fillStyle": "solid",
+      "roundness": {
+        "type": 3
+      }
     },
     {
       "id": "END-text",
@@ -264,7 +294,7 @@
       "link": null,
       "locked": false,
       "text": "__end__",
-      "fontSize": 13,
+      "fontSize": 16,
       "fontFamily": 1,
       "textAlign": "center",
       "verticalAlign": "middle",
@@ -365,18 +395,13 @@
       "end": {
         "id": "tools"
       },
-      "boundElements": [
-        {
-          "type": "text",
-          "id": "tools_condition_tools-text"
-        }
-      ]
+      "boundElements": []
     },
     {
       "id": "tools_condition_tools-text",
       "type": "text",
-      "x": 169.965,
-      "y": 405.172,
+      "x": 20,
+      "y": 440,
       "width": 78,
       "height": 16.25,
       "angle": 0,
@@ -400,11 +425,11 @@
       "link": null,
       "locked": false,
       "text": "tool calls",
-      "fontSize": 13,
+      "fontSize": 16,
       "fontFamily": 1,
       "textAlign": "center",
       "verticalAlign": "middle",
-      "containerId": "tools_condition_tools",
+      "containerId": null,
       "originalText": "tool calls",
       "autoResize": true,
       "lineHeight": 1.25
@@ -439,18 +464,13 @@
       "end": {
         "id": "END"
       },
-      "boundElements": [
-        {
-          "type": "text",
-          "id": "tools_condition_END-text"
-        }
-      ]
+      "boundElements": []
     },
     {
       "id": "tools_condition_END-text",
       "type": "text",
-      "x": 218.24,
-      "y": 407.103,
+      "x": 270,
+      "y": 440,
       "width": 101.39999999999999,
       "height": 16.25,
       "angle": 0,
@@ -474,11 +494,11 @@
       "link": null,
       "locked": false,
       "text": "no tool calls",
-      "fontSize": 13,
+      "fontSize": 16,
       "fontFamily": 1,
       "textAlign": "center",
       "verticalAlign": "middle",
-      "containerId": "tools_condition_END",
+      "containerId": null,
       "originalText": "no tool calls",
       "autoResize": true,
       "lineHeight": 1.25
