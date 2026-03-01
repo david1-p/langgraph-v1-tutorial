@@ -76,8 +76,8 @@
           "id": "chatbot-text"
         }
       ],
-      "backgroundColor": "#dbeafe",
-      "strokeColor": "#2563eb",
+      "backgroundColor": "#fef08a",
+      "strokeColor": "#ca8a04",
       "fillStyle": "solid"
     },
     {
