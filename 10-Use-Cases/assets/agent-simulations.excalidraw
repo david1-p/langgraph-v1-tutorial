@@ -270,7 +270,7 @@
       "id": "AI_SIM",
       "type": "arrow",
       "groupIds": [],
-      "x": 125.36,
+      "x": 97,
       "y": 208,
       "strokeWidth": 2,
       "strokeColor": "#1e1e1e",
@@ -278,18 +278,16 @@
       "strokeStyle": "solid",
       "points": [
         [0, 0],
-        [-2.808, 6.667],
-        [-1.553, 76.314]
+        [-4, 40],
+        [-8, 80]
       ],
-      "roundness": { "type": 2 },
-      "start": { "id": "AI" },
-      "end": { "id": "SIM" }
+      "roundness": { "type": 2 }
     },
     {
       "id": "SIM_AI",
       "type": "arrow",
       "groupIds": [],
-      "x": 150.64,
+      "x": 186,
       "y": 288,
       "strokeWidth": 2,
       "strokeColor": "#1e1e1e",
@@ -297,12 +295,10 @@
       "strokeStyle": "dashed",
       "points": [
         [0, 0],
-        [2.808, -6.667],
-        [1.553, -76.314]
+        [-4, -40],
+        [-8, -80]
       ],
       "roundness": { "type": 2 },
-      "start": { "id": "SIM" },
-      "end": { "id": "AI" },
       "boundElements": [
         {
           "type": "text",
@@ -313,8 +309,8 @@
     {
       "id": "SIM_AI-text",
       "type": "text",
-      "x": 169.44,
-      "y": 241.875,
+      "x": 194,
+      "y": 239.875,
       "width": 62.4,
       "height": 16.25,
       "angle": 0,
